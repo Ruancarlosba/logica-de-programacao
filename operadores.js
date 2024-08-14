@@ -32,4 +32,4 @@ igualdade de valor e tipo ===
 console.log(n1 == "10"); // resul: true , porque "==" está coparando o valor
 console.log(n1 === "10"); // resul: false, o valor é igual mas os tipos saõ diferentes
 console.log(n1 != "10");
-console.log(n1 !== "10");f
+console.log(n1 !== "10");
