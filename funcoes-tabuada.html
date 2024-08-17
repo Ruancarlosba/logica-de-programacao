@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Funçoes - tabuada</h1>
+
+    <button onclick="mostrarTabuada()">Mostrar Tabuada</button> <button onclick="limparTabuada()">Limpar Tabuada</button>
+    <div id="Output"></div>
+
+    <script>
+
+        const Output = document.getElementById("Output")
+        const limpar = document.getElementById("limpar")
+
+        function mostrarTabuada() {
+            /*
+            Uma das diferenças de let e const é que estaõ em um escopo de bloco e o var em um escopo de funçao mesmo se tiver criado dentro de um bloco
+            */
+            let numero = parseFloat(prompt("digite um número"))
+            let msg = ""         
+
+            for (let i = 0; i <= 100; i++) {
+
+              msg+= `${numero} x  ${i} = ${(numero * i)} <br>`
+              
+            }
+            
+
+            Output.innerHTML = msg
+        }
+
+        function limparTabuada() {
+            Output.innerHTML = ""
+        }
+
+      
+    </script>
+</body>
+</html>

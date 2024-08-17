@@ -32,8 +32,22 @@
             return new Date().getDay()
         }
 
-        let dia = obtemDiaSemana()
-        console.log(dia)
+        console.log(obtemDiaSemana())
+
+        //funçao de parametro
+        function somar(n1 = 0,n2 = 0) {
+
+            /* n1 = 0,n2 = 0 - naõ vai funcionar em todos os browsers.
+            
+             let _n1 = n1 || 0
+             ------------------ utilizado em browsers mais antigos.
+             let _n2 = n2 || 0
+            */
+            return n1 + n2
+        }
+
+        let soma = somar(3)
+        console.log(soma)
 
     </script>
 </body>
